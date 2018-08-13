@@ -62,7 +62,7 @@ for eachline in file_obj:
     print "Downloading the file..."
     response = urllib2.urlopen(mp3_url)
     data = response.read()
-    file = open("/Users/**/Downloads/music/{}.mp3".format(song_name),'w')
+    file = open("./music/{}.mp3".format(song_name),'w')
     file.write(data)
     file.close()
     print "{} download completed.".format(song_name)
